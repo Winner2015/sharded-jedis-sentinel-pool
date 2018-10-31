@@ -83,8 +83,7 @@ Constant pool:  						  // 常量池
    #9 = Methodref          #45.#46        // java/io/PrintStream.println:(Ljava/lang/String;)V
   #10 = Class              #47            // java/lang/StringBuilder
   #11 = Methodref          #10.#30        // java/lang/StringBuilder."<init>":()V
-  #12 = Methodref          #10.#48        // java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder
-;
+  #12 = Methodref          #10.#48        // java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
   #13 = Methodref          #10.#49        // java/lang/StringBuilder.toString:()Ljava/lang/String;
   #14 = Class              #50            // test/LambdaTest
   #15 = Class              #51            // java/lang/Object
@@ -244,16 +243,27 @@ SourceFile: "LambdaTest.java"
 InnerClasses:
      public static final #74= #73 of #77; //Lookup=class java/lang/invoke/MethodHandles$Lookup of class java/lang/invoke/MethodHandles
 BootstrapMethods:
-  0: #36 invokestatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/
-String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/Method
-Type;)Ljava/lang/invoke/CallSite;
+  0: #36 invokestatic java/lang/invoke/LambdaMetafactory.metafactory:(
+  Ljava/lang/invoke/MethodHandles$Lookup;
+  Ljava/lang/String;
+  Ljava/lang/invoke/MethodType;
+  Ljava/lang/invoke/MethodType;
+  Ljava/lang/invoke/MethodHandle;
+  Ljava/lang/invoke/MethodType;)
+  Ljava/lang/invoke/CallSite;
     Method arguments:
       #37 (Ljava/lang/String;)V
       #38 invokestatic test/LambdaTest.lambda$main$0:(Ljava/lang/String;Ljava/lang/String;)V
       #37 (Ljava/lang/String;)V
-  1: #36 invokestatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/
-String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/Method
-Type;)Ljava/lang/invoke/CallSite;
+  
+  1: #36 invokestatic java/lang/invoke/LambdaMetafactory.metafactory:(
+  Ljava/lang/invoke/MethodHandles$Lookup;
+  Ljava/lang/String;
+  Ljava/lang/invoke/MethodType;
+  Ljava/lang/invoke/MethodType;
+  Ljava/lang/invoke/MethodHandle;
+  Ljava/lang/invoke/MethodType;)
+  Ljava/lang/invoke/CallSite;
     Method arguments:
       #37 (Ljava/lang/String;)V
       #41 invokestatic test/LambdaTest.lambda$main$1:(Ljava/lang/String;)V
