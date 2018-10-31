@@ -1,0 +1,158 @@
+
+Compiled from "LambdaTest.java"
+public class test.LambdaTest {
+	  public test.LambdaTest();
+	  public static void printString(java.lang.String, test.Print<java.lang.String>);
+	  public static void main(java.lang.String[]);
+	  private static void lambda$main$0(java.lang.String);
+	}
+
+
+Compiled from "LambdaTest.java"
+interface test.Print<T> {
+  public abstract void print(T);
+}
+
+
+PS D:\git\sharded-jedis-sentinel-pool\src\test\java\test> javap -p -v -c .\LambdaTest.class
+Classfile /D:/git/sharded-jedis-sentinel-pool/src/test/java/test/LambdaTest.class
+  Last modified 2018-10-19; size 1206 bytes
+  MD5 checksum 9cff7e39da0fe7d6945a9bdb6c4f1fa8
+  Compiled from "LambdaTest.java"
+public class test.LambdaTest
+  minor version: 0
+  major version: 52
+  flags: ACC_PUBLIC, ACC_SUPER
+Constant pool:
+   #1 = Methodref          #9.#24         // java/lang/Object."<init>":()V
+   #2 = InterfaceMethodref #25.#26        // test/Print.print:(Ljava/lang/Object;)V
+   #3 = String             #27            // Hello world
+   #4 = InvokeDynamic      #0:#33         // #0:print:()Ltest/Print;
+   #5 = Methodref          #8.#34         // test/LambdaTest.printString:(Ljava/lang/String;Ltest/Print;)V
+   #6 = Fieldref           #35.#36        // java/lang/System.out:Ljava/io/PrintStream;
+   #7 = Methodref          #37.#38        // java/io/PrintStream.print:(Ljava/lang/String;)V
+   #8 = Class              #39            // test/LambdaTest
+   #9 = Class              #40            // java/lang/Object
+  #10 = Utf8               <init>
+  #11 = Utf8               ()V
+  #12 = Utf8               Code
+  #13 = Utf8               LineNumberTable
+  #14 = Utf8               printString
+  #15 = Utf8               (Ljava/lang/String;Ltest/Print;)V
+  #16 = Utf8               Signature
+  #17 = Utf8               (Ljava/lang/String;Ltest/Print<Ljava/lang/String;>;)V
+  #18 = Utf8               main
+  #19 = Utf8               ([Ljava/lang/String;)V
+  #20 = Utf8               lambda$main$0
+  #21 = Utf8               (Ljava/lang/String;)V
+  #22 = Utf8               SourceFile
+  #23 = Utf8               LambdaTest.java
+  #24 = NameAndType        #10:#11        // "<init>":()V
+  #25 = Class              #41            // test/Print
+  #26 = NameAndType        #42:#43        // print:(Ljava/lang/Object;)V
+  #27 = Utf8               Hello world
+  #28 = Utf8               BootstrapMethods
+  #29 = MethodHandle       #6:#44         // invokestatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/inv
+oke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/M
+ethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+  #30 = MethodType         #43            //  (Ljava/lang/Object;)V
+  #31 = MethodHandle       #6:#45         // invokestatic test/LambdaTest.lambda$main$0:(Ljava/lang/String;)V
+  #32 = MethodType         #21            //  (Ljava/lang/String;)V
+  #33 = NameAndType        #42:#46        // print:()Ltest/Print;
+  #34 = NameAndType        #14:#15        // printString:(Ljava/lang/String;Ltest/Print;)V
+  #35 = Class              #47            // java/lang/System
+  #36 = NameAndType        #48:#49        // out:Ljava/io/PrintStream;
+  #37 = Class              #50            // java/io/PrintStream
+  #38 = NameAndType        #42:#21        // print:(Ljava/lang/String;)V
+  #39 = Utf8               test/LambdaTest
+  #40 = Utf8               java/lang/Object
+  #41 = Utf8               test/Print
+  #42 = Utf8               print
+  #43 = Utf8               (Ljava/lang/Object;)V
+  #44 = Methodref          #51.#52        // java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHan
+dles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;L
+java/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+  #45 = Methodref          #8.#53         // test/LambdaTest.lambda$main$0:(Ljava/lang/String;)V
+  #46 = Utf8               ()Ltest/Print;
+  #47 = Utf8               java/lang/System
+  #48 = Utf8               out
+  #49 = Utf8               Ljava/io/PrintStream;
+  #50 = Utf8               java/io/PrintStream
+  #51 = Class              #54            // java/lang/invoke/LambdaMetafactory
+  #52 = NameAndType        #55:#59        // metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava
+/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/
+lang/invoke/CallSite;
+  #53 = NameAndType        #20:#21        // lambda$main$0:(Ljava/lang/String;)V
+  #54 = Utf8               java/lang/invoke/LambdaMetafactory
+  #55 = Utf8               metafactory
+  #56 = Class              #61            // java/lang/invoke/MethodHandles$Lookup
+  #57 = Utf8               Lookup
+  #58 = Utf8               InnerClasses
+  #59 = Utf8               (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/
+lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+  #60 = Class              #62            // java/lang/invoke/MethodHandles
+  #61 = Utf8               java/lang/invoke/MethodHandles$Lookup
+  #62 = Utf8               java/lang/invoke/MethodHandles
+{
+  public test.LambdaTest();
+    descriptor: ()V
+    flags: ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: return
+      LineNumberTable:
+        line 5: 0
+
+  public static void printString(java.lang.String, test.Print<java.lang.String>);
+    descriptor: (Ljava/lang/String;Ltest/Print;)V
+    flags: ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=2, locals=2, args_size=2
+         0: aload_1
+         1: aload_0
+         2: invokeinterface #2,  2            // InterfaceMethod test/Print.print:(Ljava/lang/Object;)V
+         7: return
+      LineNumberTable:
+        line 8: 0
+        line 9: 7
+    Signature: #17                          // (Ljava/lang/String;Ltest/Print<Ljava/lang/String;>;)V
+
+  public static void main(java.lang.String[]);
+    descriptor: ([Ljava/lang/String;)V
+    flags: ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=2, locals=1, args_size=1
+         0: ldc           #3                  // String Hello world
+         2: invokedynamic #4,  0              // InvokeDynamic #0:print:()Ltest/Print;
+         7: invokestatic  #5                  // Method printString:(Ljava/lang/String;Ltest/Print;)V
+        10: return
+      LineNumberTable:
+        line 12: 0
+        line 13: 10
+
+  private static void lambda$main$0(java.lang.String);
+    descriptor: (Ljava/lang/String;)V
+    flags: ACC_PRIVATE, ACC_STATIC, ACC_SYNTHETIC
+    Code:
+      stack=2, locals=1, args_size=1
+         0: getstatic     #6                  // Field java/lang/System.out:Ljava/io/PrintStream;
+         3: aload_0
+         4: invokevirtual #7                  // Method java/io/PrintStream.print:(Ljava/lang/String;)V
+         7: return
+      LineNumberTable:
+        line 12: 0
+}
+SourceFile: "LambdaTest.java"
+InnerClasses:
+     public static final #57= #56 of #60; //Lookup=class java/lang/invoke/MethodHandles$Lookup of class java/lang/invoke
+/MethodHandles
+BootstrapMethods:
+  0: #29 invokestatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/
+String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/Method
+Type;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #30 (Ljava/lang/Object;)V
+      #31 invokestatic test/LambdaTest.lambda$main$0:(Ljava/lang/String;)V
+      #32 (Ljava/lang/String;)V
