@@ -270,6 +270,10 @@ BootstrapMethods:
       #37 (Ljava/lang/String;)V
 
 
+
+
+
+
 *******************
 
 final class test.LambdaTest$$Lambda$1 implements test.Print {
